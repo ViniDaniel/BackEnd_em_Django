@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil dos Fornecedores</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>nome</th>
+                <th>cnpj</th>
+                <th>endereco</th>
+                <th>celular</th>
+                <th>email</th>
+                <th>produto</th>
+            </tr>
+
+            {% for fornecedor in fornecedores %}
+
+            <tr>
+                <td>{{fornecedor.id_fornecedor}}</td>
+                <td>{{fornecedor.nome}}</td>
+                <td>{{fornecedor.cnpj}}</td>
+                <td>{{fornecedor.endereco}}</td>
+                <td>{{fornecedor.celular}}</td>
+                <td>{{fornecedor.email}}</td>
+                <td>{{fornecedor.produto}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
