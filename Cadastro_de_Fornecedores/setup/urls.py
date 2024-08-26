@@ -6,7 +6,9 @@ from app_cadastro_fornecedores import views
 urlpatterns = [
     # rota, view resposável, nome de refêrencia.
     #fornecedores.com
-    path('', views.home,
-     name='home'),
+    path('', views.home,name='home'),
+     #fornecedores.com/fornecedores
+    path('fornecedores/',views.fornecedores,name='listagem_fornecedores')
 
 ]
+
